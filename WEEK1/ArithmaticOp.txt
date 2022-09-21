@@ -1,0 +1,42 @@
+print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division")
+ch=int(input("Enter your choice "))
+//Arithmatic Operation
+result=0
+if( ch==1)or( ch==2 )or(ch==3 )or(| ch==4):
+    a=int(input("Enter a value for a : "))
+    b=int(input("Enter a value for b : "))
+    if(ch==1):
+        print("Result = ",a+b)
+    elif(ch==2):
+        print("Result = ",a-b)
+    elif(ch==3):
+        print("Result = ",a*b)
+    elif(ch==4):
+        print("Result = ",a/b)
+else:
+    print("Invalid Input")
+
+
+//Generating random floating numbers
+import random
+n=random.randint(0,100)
+print(n)
+
+//Generating random integer numbers
+import random
+randomList = []
+for i in range(0,5):
+    n=random.randint(30,90)
+    randomList.append(n)
+print(randomList)
+
+//Generating random integer numbers
+import random
+randomList = random.sample(range(30,90),5)
+print(randomList)
+
+//Encoding
+ch=(input("Enter a character "))
+enCh=ord((ch))
+encode=enCh+2
+print(chr(encode))
